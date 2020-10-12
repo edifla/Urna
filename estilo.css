@@ -1,0 +1,151 @@
+@keyframes pisca{/*DEfinindo uma animação*/
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
+body{
+    margin: 0;/*Reset*/
+    display: flex;/*Para alinhar o conteúdo no centro*/
+    justify-content: center;/*Para alinhar o conteúdo no centro*/
+    align-items: center;/*Para alinhar o conteúdo no centro*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.urna{
+    background-color: #dbd5c9;/*Definindo o background da div que engloba tudo*/
+    padding: 30px;/*Aumentando o espaço entre a div e o conteúdo dentro dela*/
+    display: flex;/*Para deixar o conteúdo um do lado do outro*/
+}
+.tela{
+    width: 500px;/*Definindo o tamanho de 500px pra tela*/
+    height: 320px;/*Definindo a altura de 320px pra tela*/
+    background: linear-gradient(to right, #e8e8e8,#c1c1c1);/*Para a tela começar de uma cor no inicio e ir transicionando*/
+    border: 3px solid black;/*Definindo a borda na tela*/
+    display: flex;/*Definindo display como flexível*/
+    flex-direction: column;/*Definindo para colunas*/
+
+}
+.teclado{
+    background-color: #403a3a;/*Definindo a cor de fundo do teclado*/
+    margin-left: 30px;/*Dando uma distância entre a tela e o teclado*/
+}
+.teclado--linha{
+    display: flex; /*Deixando os números nas linhas em fileira*/
+    justify-content: center;/*Faz o zero ir pro centro por estar sozinho*/
+    align-items: center; /*Fazendo os botões alinharem ao centro na horizontal*/
+}
+.teclado--botao{
+    width: 70px;/*Definindo a Largura do botão*/
+    height: 40px;/*Definindo a altura do botão*/
+    background-color: #000;/*Definindo a cor de fundo do botão*/
+    color: #fff;/*Definindo a cor do componente do botão*/
+    font-size: 25px;/*Definindo o tamanho da fonte do botão*/
+
+    display: flex;/*Fazendo o conteúdo do botão se alinhar no centro*/
+    justify-content: center;/*Fazendo o conteúdo do botão se alinhar no centro*/
+    align-items: center;/*Fazendo o conteúdo do botão se alinhar no centro*/
+    margin: 10px;/*Dando uma distância entre os botões*/
+
+    cursor: pointer;/*Deixando o cursor da mãozinha*/
+
+    box-shadow: 3px 3px 3px #555;/*Dando um sombreamento no botão*/
+}
+.botao--branco{
+    background-color: #fff;/*Alterando fundo no botão branco*/
+    color: #000;/*Cor de conteúdo preto*/
+    font-size: 15px;/*Definindo o tamanho da fonte*/
+}
+.botao--corrige{
+    background-color: #f09046;/*Alterando fundo no botão corrige*/
+    color: #000;/*Cor de conteúdo preto*/
+    font-size: 15px;/*Definindo o tamanho da fonte*/
+}
+.botao--confirma{
+    background-color: #48c079;/*Alterando fundo no botão Confirma*/
+    color: #000;/*Cor de conteúdo preto*/
+    font-size: 15px;/*Definindo o tamanho da fonte*/
+    width: 90px;/*Deixando o botão confirma Maior em largura*/
+    height: 50px;/*Deixando a altura do botão confirma maior*/
+}
+.d-1{
+    flex: 1;/*Reservando um espaço para esta div*/
+    display: flex;/*Deixando cada conteúdo de um lado da tela em conjunto do flex1*/
+    
+}
+.d1--left{/*Comanda toda parte superior da tela*/
+    flex: 1;/*Reservando um espaço para esta div*/
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.d-1-1{
+    height: 50px;/*Definindo a Altura */
+    display: flex;
+    align-items: center;
+}
+.d-1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1-3{
+    height: 50px;
+}
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+
+}
+.pisca{
+    animation-name: pisca;/*Dando um nome a animação*/
+    animation-duration: 1s;/*Definindo a duração em que ela ocorre*/
+    animation-iteration-count: infinite;/*Definindo por quanto tempo ela vai ocorrer*/
+}
+.d-1-4{
+    flex: 1;
+    line-height: 30px;
+}
+.d1--right{
+    width: 90px;/*Definindo a Largura */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;/*Pra jogar pro lado direito*/
+    
+}
+.d-1-image{
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.d-1-image img{
+    width: 100%; 
+    
+}
+.d-1-image.small{
+    width: 80%; 
+    font-size: 12px;
+}
+.d-2{
+    border-top: 2px solid;/*Definindo a borda superior*/
+    height: 50px;/*Definindo a Altura */
+    font-size: 14px;/*Definindo o tamanho da fonte*/
+    padding-left: 10px;/*Dando um espaçamento esquerdo da tela*/
+}
+.aviso--grande{
+    font-size: 40px;
+    font-weight: bold;
+}
+.aviso--gigante{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
